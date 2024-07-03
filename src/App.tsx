@@ -1,11 +1,13 @@
 
-import TaylorCook from './pages/TaylorCook'
+import { Outlet } from 'react-router-dom'
+
+
 function App() {
  
 
   return (
     <>
-     <TaylorCook/>
+     <Outlet/>
     </>
   )
 }

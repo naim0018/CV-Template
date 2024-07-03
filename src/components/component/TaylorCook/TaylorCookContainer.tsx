@@ -68,7 +68,7 @@ const {personalInfo,summary,experience,education,skills}= resumeData
           <Title title={'Education'}/>
           <div className="space-y-5">
           {
-            education.map(edu => <Education education ={edu}/>)
+            education.map(edu => <Education key={edu.id} education ={edu}/>)
               
           }
           </div>

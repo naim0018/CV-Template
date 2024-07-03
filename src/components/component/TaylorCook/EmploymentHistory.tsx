@@ -4,7 +4,6 @@ const EmploymentHistory = ({experienceData}) => {
     const {title,companyName,city,state,startDate,endDate,currentlyWorking,workSummary} = experienceData
   return (
     <div className="space-y-5">
-
     <div className="space-y-5">
       <div className="flex items-start justify-between">
         <div className="space-y-1">

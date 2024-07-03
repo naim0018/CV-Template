@@ -9,7 +9,7 @@ import Title04 from "./Title04";
 // #B8623D
 
 const Template04Container = () => {
-    const { personalInfo, summary, experience, education,skills } = resumeData;
+    const { personalInfo, summary, experience, education } = resumeData;
   return (
     <div className="p-10 space-y-10">
         {/* Header */}

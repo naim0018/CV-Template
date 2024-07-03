@@ -1,4 +1,4 @@
-import React from "react";
+
 import { resumeData } from "../../../lib/json";
 import UserInfo from "./UserInfo";
 import Title from "./Title";
@@ -6,7 +6,7 @@ import Experience from "./Experience";
 import Education from "./Education";
 
 const Template02container = () => {
-  const { personalInfo, summary, experience, education, skills } = resumeData;
+  const { personalInfo, summary, experience, education } = resumeData;
   return (
     <div className="p-20 space-y-14">
       {/* Heading */}

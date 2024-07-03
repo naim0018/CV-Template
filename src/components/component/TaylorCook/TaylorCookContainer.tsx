@@ -1,4 +1,4 @@
-import React from "react";
+
 import Title from "./Title";
 import Details from "./Details";
 import Skills from "./Skills";

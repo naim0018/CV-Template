@@ -1,6 +1,17 @@
-import React from 'react'
 
-const Experience = ({experience}) => {
+
+interface ExperienceProps {
+    experience: {
+      companyName: string,
+      city: string,
+      state: string,
+      startDate: string,
+      endDate?: string,
+      currentlyWorking: boolean,
+      workSummary: string
+    }
+  }
+const Experience: React.FC<ExperienceProps> = ({experience}) => {
     const {companyName,city,state,startDate,endDate,currentlyWorking,workSummary} = experience
     
   return (

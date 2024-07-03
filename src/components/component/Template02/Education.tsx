@@ -1,7 +1,18 @@
-import React from 'react'
 
-const Education = ({education}) => {
-    const {universityName,startDate,endDate,degree,major,currentlyStudying,desciption} = education
+
+type EducationProps = {
+    education: {
+      universityName: string,
+      startDate: string,
+      endDate?: string,
+      degree: string,
+      major: string,
+      currentlyStudying: boolean,
+      description?: string
+    }
+  }
+const Education: React.FC<EducationProps> = ({education}) => {
+    const {universityName,startDate,endDate,major,currentlyStudying} = education
   return (
     <div>
         <div className="grid grid-cols-4">

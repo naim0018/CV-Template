@@ -1,6 +1,19 @@
 
-const Education = ({education}) => {
-    const {universityName,startDate,endDate,degree,major,currentlyWorking,description} = education
+
+type EducationProps = {
+  education: {
+    universityName: string,
+    startDate: string,
+    endDate?: string,
+    degree: string,
+    major: string,
+    currentlyStudying: boolean,
+    description?: string
+  }
+}
+
+const Education: React.FC<EducationProps> = ({education}) => {
+    const {universityName,startDate,endDate,degree,major,description} = education
   return (
     <div>
     <div className="flex items-start justify-between">

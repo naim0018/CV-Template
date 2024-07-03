@@ -1,6 +1,19 @@
 
+interface Experience {
+  title: string;
+  companyName: string;
+  city: string;
+  state: string;
+  startDate: string;
+  endDate?: string;
+  currentlyWorking: boolean;
+  workSummary: string;
+}
 
-const EmploymentHistory = ({experienceData}) => {
+interface ExperienceProps {
+  experienceData: Experience;
+}
+const EmploymentHistory :React.FC<ExperienceProps> = ({experienceData}) => {
     const {title,companyName,city,state,startDate,endDate,currentlyWorking,workSummary} = experienceData
   return (
     <div className="space-y-5">

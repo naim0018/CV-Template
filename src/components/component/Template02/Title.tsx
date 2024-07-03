@@ -1,6 +1,9 @@
-import React from 'react'
 
-const Title = ({title}) => {
+interface TitleProps {
+    title: string
+  }
+
+const Title: React.FC<TitleProps> = ({title}) => {
   return (
     <div className='w-fit'>
         <h2 className='text-lg font-bold uppercase'>{title}</h2>

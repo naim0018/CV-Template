@@ -10,7 +10,7 @@ const Skills :React.FC<{skill:TSkill}> = ({skill}) => {
     const {name,rating}=skill
   return (
     <div className="space-y-2">
-      <h3 className="font-semibold">{name}</h3>
+      <h3 className="font-semibold text-black/60">{name}</h3>
       <ProgressUI skill={rating} />
     </div>
  

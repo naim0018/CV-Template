@@ -6,7 +6,6 @@ import Languages from "./Languages";
 import EmploymentHistory from "./EmploymentHistory";
 import Education from "./Education";
 import { resumeData } from "../../../lib/json";
-import { profile } from "console";
 
 
 const TaylorCookContainer = () => {
@@ -33,11 +32,13 @@ const {personalInfo,summary,experience,education,skills}= resumeData
             }
           </div>
           {/* Skills */}
-          <div className="space-y-3 ">
+          <div className="space-y-2">
           <Title title={"Skills"}/>
+          <div className="space-y-4 ">
           {
             skills.map(skill=><Skills key={skill.id} skill={skill}/>)
           }
+          </div>
           </div>
           
           {/* Language */}
@@ -63,7 +64,7 @@ const {personalInfo,summary,experience,education,skills}= resumeData
 
           </div>
           {/* Education */}
-          <div className="space-y-5">
+          <div className="space-y-2">
           <Title title={'Education'}/>
           <div className="space-y-5">
           {

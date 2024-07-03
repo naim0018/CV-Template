@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from './Title'
+
 type TPersonalInfo ={
     personalInfo : {
         address:string,

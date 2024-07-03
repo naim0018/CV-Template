@@ -3,6 +3,7 @@ import App from "../App";
 import Template02 from "../pages/Template02";
 import TaylorCookContainer from "../components/component/TaylorCook/TaylorCookContainer";
 import Template03 from "../pages/Template03";
+import Template04 from "../pages/Template04";
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
             {
                 path:'template-03',
                 element:<Template03/>
+            },
+            {
+                path:'template-04',
+                element:<Template04/>
             },
         ]
     }

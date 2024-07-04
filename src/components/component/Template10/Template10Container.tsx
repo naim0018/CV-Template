@@ -4,7 +4,7 @@ import Header10 from "./Header10"
 
 
 const Template10Container  = () => {
-    const { personalInfo, summary, experience, education } = resumeData;
+    const { personalInfo } = resumeData;
   return (
     <div className="px-10">
         {/* Header */}

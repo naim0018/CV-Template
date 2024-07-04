@@ -12,7 +12,7 @@ const TaylorCookContainer = () => {
 const {personalInfo,summary,experience,education,skills}= resumeData
 
   return (
-    <div className="p-20">
+    <div className="max-w-[1220px] mx-auto p-10">
       {/* Top */}
       <div className="space-y-4 pb-8 border-b-[3px] ">
         <h1 className="text-6xl font-medium tracking-widest uppercase">

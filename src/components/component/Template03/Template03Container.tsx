@@ -9,7 +9,7 @@ import AreasOfExpertise03 from "./AreasOfExpertise03";
 const Template03Container = () => {
   const { personalInfo, summary, experience, education,skills } = resumeData;
   return (
-    <div className="p-5">
+    <div className="max-w-[1220px] mx-auto p-10">
       {/* Header */}
       <div className="">
         <Header03 personalInfo={personalInfo} />
@@ -17,7 +17,7 @@ const Template03Container = () => {
       <div className="p-14 space-y-10">
         {/* Description */}
         <div className="space-y-5">
-          <h4 className="text-2xl">{experience[0].title}</h4>
+          <h4 className="text-2xl text-[#76995f]">{experience[0].title}</h4>
           <p className="">{summary}</p>
         </div>
         {/* Career Experience */}

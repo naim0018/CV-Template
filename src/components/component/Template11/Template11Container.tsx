@@ -6,7 +6,7 @@ import Header11 from "./Header11"
 const Template11Container = () => {
   const { personalInfo, experience } = resumeData
   return (
-    <div className="p-10 ">
+    <div className="max-w-[1220px] mx-auto p-10  ">
       <div className="">
         <Header11 personalInfo = {personalInfo}/>
       </div>

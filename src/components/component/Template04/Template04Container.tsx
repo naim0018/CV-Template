@@ -11,7 +11,7 @@ import Title04 from "./Title04";
 const Template04Container = () => {
     const { personalInfo, summary, experience, education } = resumeData;
   return (
-    <div className="p-10 space-y-10">
+    <div className="max-w-[1220px] mx-auto p-10 space-y-10">
         {/* Header */}
         <div className="">
             <Header04 personalInfo={personalInfo}/>

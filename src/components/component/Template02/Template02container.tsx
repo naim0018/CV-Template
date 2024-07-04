@@ -8,10 +8,10 @@ import Education from "./Education";
 const Template02container = () => {
   const { personalInfo, summary, experience, education } = resumeData;
   return (
-    <div className="p-20 space-y-14">
+    <div className="max-w-[1220px] mx-auto p-10 space-y-14">
       {/* Heading */}
       <div className="flex items-center justify-between">
-        <span className="space-y-5">
+        <span className="space-y-2">
           <h1 className="text-5xl font-semibold">
             {personalInfo.firstName} {personalInfo.lastName}
           </h1>

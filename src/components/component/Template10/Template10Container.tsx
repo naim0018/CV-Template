@@ -4,9 +4,9 @@ import Header10 from "./Header10"
 
 
 const Template10Container  = () => {
-    const { personalInfo } = resumeData;
+    const { personalInfo,summary } = resumeData;
   return (
-    <div className="px-10">
+    <div className="max-w-[1220px] mx-auto p-10">
         {/* Header */}
         <div className="py-8">
             <Header10 personalInfo={personalInfo}/>
@@ -14,7 +14,7 @@ const Template10Container  = () => {
         <hr className="border-b-[1px] border-black"/>
         {/* Body */}
         <div className="">
-            <Body10/>
+            <Body10 summary={summary}/>
         </div>
     </div>
   )

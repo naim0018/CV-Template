@@ -1,7 +1,7 @@
 import { TEducation } from "../../../interface"
 
-const Education: React.FC<TEducation> = ({education}) => {
-    const {universityName,startDate,endDate,degree,major,description} = education
+const Education: React.FC<TEducation> = ({edu}) => {
+    const {universityName,startDate,endDate,degree,major,description} = edu
   return (
     <div>
     <div className="flex items-start justify-between">

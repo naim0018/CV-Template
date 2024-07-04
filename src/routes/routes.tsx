@@ -9,6 +9,7 @@ import Template09 from "../pages/Template09";
 import Template10 from "../pages/Template10";
 import Template11 from "../pages/Template11";
 import Template06 from "../pages/Template06";
+import Template07 from "../pages/Template07";
 
 export const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
             {
                 path:'template-06',
                 element:<Template06/>
+            },
+            {
+                path:'template-07',
+                element:<Template07/>
             },
             {
                 path:'template-09',

@@ -49,10 +49,11 @@ const {personalInfo,summary,experience,education,skills}= resumeData
           {/* Profile */}
           <div className="space-y-2">
             <Title title={"Profile"} />
-            <p className=" pb-10 border-b-[3px] border-black/10">
+            <p className=" pb-10 ">
             {summary}
             </p>
           </div>
+          <hr className="border-b-[2px]"/>
           {/* Employment History  */}
           <div className="space-y-2">
           <Title title={"Employment History"} />
@@ -63,6 +64,7 @@ const {personalInfo,summary,experience,education,skills}= resumeData
           </div>
 
           </div>
+          <hr className="border-b-[2px]"/>
           {/* Education */}
           <div className="space-y-2">
           <Title title={'Education'}/>

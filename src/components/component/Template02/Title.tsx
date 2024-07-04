@@ -1,9 +1,6 @@
+import { TTitle } from "../../../interface"
 
-interface TitleProps {
-    title: string
-  }
-
-const Title: React.FC<TitleProps> = ({title}) => {
+const Title: React.FC<TTitle> = ({title}) => {
   return (
     <div className='w-fit'>
         <h2 className='text-lg font-bold uppercase'>{title}</h2>

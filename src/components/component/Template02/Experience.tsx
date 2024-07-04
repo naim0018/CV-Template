@@ -1,18 +1,9 @@
+import { TExperience } from "../../../interface"
 
 
-interface ExperienceProps {
-    experience: {
-      companyName: string,
-      city: string,
-      state: string,
-      startDate: string,
-      endDate?: string,
-      currentlyWorking: boolean,
-      workSummary: string
-    }
-  }
-const Experience: React.FC<ExperienceProps> = ({experience}) => {
-    const {companyName,city,state,startDate,endDate,currentlyWorking,workSummary} = experience
+
+const Experience: React.FC<TExperience> = ({exp}) => {
+    const {companyName,city,state,startDate,endDate,currentlyWorking,workSummary} = exp
     
   return (
     <div className='grid grid-cols-4'>

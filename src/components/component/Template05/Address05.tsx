@@ -1,12 +1,6 @@
-interface PersonalInfoProps {
-  firstName: string,
-  lastName: string,
-  jobTitle:string,
-  address: string,
-  phone: string,
-  email: string
-}
-const Address05: React.FC<{ personalInfo: PersonalInfoProps }> = ({personalInfo}) => {
+import { TPersonalInfo } from "../../../interface"
+
+const Address05: React.FC<TPersonalInfo> = ({personalInfo}) => {
   const {address,phone,email} = personalInfo
   return (
     <div className="">

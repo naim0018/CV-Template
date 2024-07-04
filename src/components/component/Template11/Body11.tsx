@@ -1,14 +1,7 @@
-interface Experience {
-  exp: {
-    title: string;
-    startDate: string;
-    endDate?: string;
-    currentlyWorking: boolean;
-    workSummary: string;
-  };
-}
+import { TExperience } from "../../../interface";
 
-const Body11: React.FC<Experience> = ({ exp }) => {
+
+const Body11: React.FC<TExperience> = ({ exp }) => {
   const { workSummary } = exp;
   return (
     <div>

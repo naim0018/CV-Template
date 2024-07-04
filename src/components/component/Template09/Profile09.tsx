@@ -1,10 +1,8 @@
+import { TSummary } from "../../../interface"
 import Title09 from "./Title09"
 
-type TProfile ={
-    summary:string
-}
 
-const Profile09 :React.FC<TProfile>= ({summary}) => {
+const Profile09 :React.FC<TSummary>= ({summary}) => {
   return (
     <div className="grid grid-cols-7">
         <div className="col-span-2">

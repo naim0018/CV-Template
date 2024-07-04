@@ -1,14 +1,6 @@
-interface Experience {
-  exp: {
-    title: string;
-    startDate: string;
-    endDate?: string;
-    currentlyWorking: boolean;
-    workSummary: string;
-  };
-}
+import { TExperience } from "../../../interface";
 
-const EmploymentHistory05: React.FC<Experience> = ({ exp }) => {
+const EmploymentHistory05: React.FC<TExperience> = ({ exp }) => {
   const { title, startDate, endDate, currentlyWorking, workSummary } = exp;
   return (
     <div className="space-y-2">

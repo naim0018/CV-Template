@@ -1,14 +1,7 @@
-interface PersonalInfoProps {
-  firstName: string,
-  lastName: string,
-  jobTitle:string,
-  address: string,
-  phone: string,
-  email: string
-}
+import { TPersonalInfo } from "../../../interface"
 
 
-const Header04 : React.FC<{ personalInfo: PersonalInfoProps }> = ({personalInfo}) => {
+const Header04 : React.FC< TPersonalInfo > = ({personalInfo}) => {
   const {firstName,lastName,jobTitle,address,phone,email} = personalInfo
   return (
     <div className="flex items-end justify-between">

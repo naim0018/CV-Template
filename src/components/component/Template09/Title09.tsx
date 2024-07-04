@@ -1,6 +1,5 @@
-type TTitle ={
-    title:string
-}
+import { TTitle } from "../../../interface"
+
 const Title09:React.FC<TTitle> = ({title}) => {
   return (
     <div>

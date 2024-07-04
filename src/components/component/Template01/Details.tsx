@@ -1,12 +1,7 @@
+import { TPersonalInfo } from "../../../interface"
 
 
-type TPersonalInfo ={
-    personalInfo : {
-        address:string,
-        phone:string,
-        email:string
-    }
-}
+
 
 const Details :React.FC<TPersonalInfo> = ({personalInfo}) => {
     const {address,phone,email} = personalInfo

@@ -1,15 +1,6 @@
-type EducationProps = {
-  edu: {
-    universityName: string,
-    startDate: string,
-    endDate?: string,
-    degree: string,
-    major: string,
-    currentlyStudying: boolean,
-    description?: string
-  }
-}
-const Education05 : React.FC<EducationProps>= ({edu}) => {
+import { TEducation } from "../../../interface"
+
+const Education05 : React.FC<TEducation>= ({edu}) => {
   const {universityName,degree,major,startDate,endDate,currentlyStudying} = edu
   return (
     <div>

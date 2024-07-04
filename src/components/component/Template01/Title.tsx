@@ -1,8 +1,7 @@
 import React from 'react'
+import { TTitle } from '../../../interface'
 
-type TTitle ={
-    title:string
-}
+
 
 const Title :React.FC<TTitle>  = ({title}) => {
   return (

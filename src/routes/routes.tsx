@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
+import Template01 from "../pages/Template01";
 import Template02 from "../pages/Template02";
-import TaylorCookContainer from "../components/component/TaylorCook/TaylorCookContainer";
 import Template03 from "../pages/Template03";
 import Template04 from "../pages/Template04";
-import Template11 from "../pages/Template11";
-import Template10 from "../pages/Template10";
-import Template09 from "../pages/Template09";
 import Template05 from "../pages/Template05";
+import Template09 from "../pages/Template09";
+import Template10 from "../pages/Template10";
+import Template11 from "../pages/Template11";
 
 export const router = createBrowserRouter([
     {
@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
         children:[
             {
                 path:'template-01',
-                element:<TaylorCookContainer/>
+                element:<Template01/>
             },
             {
                 path:'template-02',

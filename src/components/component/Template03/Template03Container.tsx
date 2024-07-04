@@ -25,7 +25,7 @@ const Template03Container = () => {
           <Title03 title={"Career Experience"} />
           <div className="">
             {
-                experience.map(experience =><Experience03 experience ={experience}/>)
+                experience.map(exp =><Experience03 key={exp.id} exp ={exp}/>)
             }
           </div>
         </div>
@@ -34,7 +34,7 @@ const Template03Container = () => {
             <Title03 title={'Education'}/>
             <div className="space-y-2">
                 {
-                    education.map(education => <Education03 education ={education}/>)
+                    education.map(edu => <Education03 edu ={edu}/>)
                 }
             </div>
         </div>

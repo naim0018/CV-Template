@@ -1,13 +1,7 @@
+import { TPersonalInfo } from "../../../interface"
 
-interface PersonalInfoProps {
-    firstName: string,
-    lastName: string,
-    address: string,
-    phone: string,
-    email: string
-  }
   
-const Header03: React.FC<{ personalInfo: PersonalInfoProps }> = ({personalInfo}) => {
+const Header03: React.FC< TPersonalInfo > = ({personalInfo}) => {
     const {firstName,lastName,address,phone,email} = personalInfo
   return (
     <div className='p-12 rounded-xl grid grid-cols-2 items-end  bg-[#bfd1b3]'>

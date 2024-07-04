@@ -8,7 +8,7 @@ import Education from "./Education";
 import { resumeData } from "../../../lib/json";
 
 
-const TaylorCookContainer = () => {
+const Template01Container = () => {
 const {personalInfo,summary,experience,education,skills}= resumeData
 
   return (
@@ -59,7 +59,7 @@ const {personalInfo,summary,experience,education,skills}= resumeData
           <Title title={"Employment History"} />
           <div className="space-y-10">
           {
-            experience.map(experienceData =><EmploymentHistory key={experienceData.id} experienceData={experienceData}/>)
+            experience.map(exp =><EmploymentHistory key={exp.id} exp={exp}/>)
           }
           </div>
 
@@ -81,4 +81,4 @@ const {personalInfo,summary,experience,education,skills}= resumeData
   );
 };
 
-export default TaylorCookContainer;
+export default Template01Container;

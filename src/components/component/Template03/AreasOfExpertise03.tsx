@@ -1,11 +1,8 @@
+import { TSkill } from "../../../interface"
 import ProgressUI from "../Shadcn/ProgressUI"
 
-type TSkill = {
-    id:number,
-    name:string,
-    rating:number
-}
-const AreasOfExpertise03 : React.FC<{skill:TSkill}> = ({skill}) => {
+
+const AreasOfExpertise03 : React.FC<TSkill> = ({skill}) => {
     const {name,rating} = skill
   return (
     <div>

@@ -33,7 +33,7 @@ const Template02container = () => {
             <Title title={'Employment History'}/>
             <div className="space-y-5">
                 {
-                    experience.map(experience => <Experience experience={experience}/>)
+                    experience.map(exp=> <Experience exp={exp}/>)
                 }
             </div>
         </div>
@@ -42,7 +42,7 @@ const Template02container = () => {
             <Title title={'Education'}/>
             <div className="space-y-5">
                 {
-                    education.map(education=><Education education={education}/>)
+                    education.map(edu=><Education edu={edu}/>)
                 }
             </div>
         </div>

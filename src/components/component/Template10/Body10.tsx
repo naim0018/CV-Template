@@ -1,6 +1,5 @@
-type TSummary={
-    summary:string
-}
+import { TSummary } from "../../../interface"
+
 const Body10 :React.FC<TSummary> = ({summary}) => {
   return (
     <div className="grid grid-cols-8 py-5">

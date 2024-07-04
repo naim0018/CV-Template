@@ -1,25 +1,14 @@
+import { TExperience } from "../../../interface";
 
 
-interface ExperienceProps {
-    experience: {
-        title:string,
-      companyName: string,
-      city: string,
-      state: string,
-      startDate: string,
-      endDate?: string,
-      currentlyWorking: boolean,
-      workSummary: string
-    }
-  }
-const Experience03 : React.FC<ExperienceProps> = ({ experience }) => {
+const Experience03 : React.FC<TExperience> = ({ exp }) => {
   const {
     title,
     startDate,
     endDate,
     currentlyWorking,
     workSummary,
-  } = experience;
+  } = exp;
   return (
     <div className="py-5">
       <div className="flex items-center justify-between pb-2">

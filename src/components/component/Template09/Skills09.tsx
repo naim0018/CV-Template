@@ -1,9 +1,6 @@
-type TSkill = {
-    id:number,
-    name:string,
-    rating:number
-}
-const Skills09 : React.FC<{skill:TSkill}> = ({skill}) => {
+import { TSkill } from "../../../interface"
+
+const Skills09 : React.FC<TSkill> = ({skill}) => {
     const {name,rating} = skill
   return (
     <div className=" flex items-center justify-between">

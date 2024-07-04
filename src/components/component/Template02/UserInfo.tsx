@@ -1,16 +1,8 @@
+import { TPersonalInfo } from "../../../interface"
 
 
-interface PersonalInfo {
-    address: string,
-    phone: string,
-    email: string
-  }
   
-  interface UserInfoProps {
-    personalInfo: PersonalInfo
-  }
-  
-const UserInfo: React.FC<UserInfoProps> = ({personalInfo}) => {
+const UserInfo: React.FC<TPersonalInfo> = ({personalInfo}) => {
   return (
     <div className="grid grid-cols-2 items-start  gap-x-20 gap-y-10">
     <div className=" flex items-start justify-between space-x-28 ">

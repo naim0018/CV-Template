@@ -1,16 +1,6 @@
-interface ExperienceProps {
-  exp: {
-      title:string,
-    companyName: string,
-    city: string,
-    state: string,
-    startDate: string,
-    endDate?: string,
-    currentlyWorking: boolean,
-    workSummary: string
-  }
-}
-const EmploymentHistory09: React.FC<ExperienceProps> = ({exp}) => {
+import { TExperience } from "../../../interface";
+
+const EmploymentHistory09: React.FC<TExperience> = ({exp}) => {
   const {
     title,
     

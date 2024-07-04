@@ -62,9 +62,9 @@ const Template09Container = () => {
                 <Title09 title={'References'}/>
                 </div>
                 <div className="col-span-5 space-y-5">
-                <Reference09 reference={personalInfo} />
-                <Reference09 reference={personalInfo} />
-                <Reference09 reference={personalInfo} />
+                <Reference09 personalInfo={personalInfo} />
+                <Reference09 personalInfo={personalInfo} />
+                <Reference09 personalInfo={personalInfo} />
                 </div>
             </div>
         </div>

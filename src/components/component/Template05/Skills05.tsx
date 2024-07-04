@@ -1,3 +1,5 @@
+import ProgressUI from "../Shadcn/ProgressUI"
+
 type TSkill = {
   id:number,
   name:string,
@@ -6,9 +8,11 @@ type TSkill = {
 const Skills05: React.FC<{skill:TSkill}>  = ({skill}) => {
   const {name,rating} = skill
   return (
-    <div className="flex items-center justify-between">
-      <p>{name}</p>
-      <p>{rating}</p>
+    <div className=" grid grid-cols-2 items-center gap-10 ">
+      <p className="">{name}</p>
+      <div className="">
+      <ProgressUI skill={rating}/>
+      </div>
     </div>
   )
 }

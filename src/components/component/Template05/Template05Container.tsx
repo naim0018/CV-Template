@@ -49,8 +49,8 @@ const Template05Container = () => {
           <Address05 personalInfo={personalInfo} />
           {/* Skills */}
           <div className="pt-10">
-            <h4 className="text-blue-700">Skills</h4>
-            <div className="">
+            <h4 className="text-blue-700 pb-2">Skills</h4>
+            <div className="space-y-2">
               {skills.map((skill) => (
                 <Skills05 skill={skill} />
               ))}

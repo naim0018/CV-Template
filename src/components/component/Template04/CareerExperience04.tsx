@@ -1,16 +1,16 @@
 
 interface Experience {
-  title: string;
+   exp:{
+    title: string;
   startDate: string;
   endDate?: string;
   currentlyWorking: boolean;
   workSummary: string;
+   }
 }
 
-interface ExperienceProps {
-  exp: Experience;
-}
-const CareerExperience04 : React.FC<ExperienceProps> = ({exp}) => {
+
+const CareerExperience04 : React.FC<Experience> = ({exp}) => {
   const {
     title,
     startDate,

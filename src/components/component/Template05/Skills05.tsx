@@ -11,7 +11,7 @@ const Skills05: React.FC<{skill:TSkill}>  = ({skill}) => {
     <div className=" grid grid-cols-2 items-center gap-10 ">
       <p className="">{name}</p>
       <div className="">
-      <ProgressUI skill={rating}/>
+      <ProgressUI skill={rating} width={'100%'}/>
       </div>
     </div>
   )

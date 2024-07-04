@@ -3,8 +3,9 @@ import { Progress } from '../../ui/progress'
 
 interface ProgressUIProps {
     skill: number;
+    width?:string
   }
-const ProgressUI : React.FC<ProgressUIProps> = ({skill}) => {
+const ProgressUI : React.FC<ProgressUIProps> = ({skill,width='60%'}) => {
     const [progress, setProgress] = useState(0)
  
  useEffect(() => {
@@ -12,7 +13,7 @@ const ProgressUI : React.FC<ProgressUIProps> = ({skill}) => {
     return () => clearTimeout(timer)
   }, [skill])
   return (
-    <Progress value={progress} className="w-[60%] h-2" />
+    <Progress value={progress} className={`w-[${width}] h-2`} />
   )
 }
 

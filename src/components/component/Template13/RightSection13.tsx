@@ -4,23 +4,23 @@ const RightSection13 = () => {
   const exp = resumeData.experience
 
   return (
-   <div className="">
-    <h5>Experience</h5>
+   <div className="w-[363px] ">
+
     {
       exp.map(exp=>{
-        const {title,companyName,city,state,startDate,endDate,currentlyWorking,workSummary} = exp
+        const {title,companyName,startDate,endDate,currentlyWorking,workSummary} = exp
         return(
-          <div className="space-y-2">
-          <h4 className="text-xl">{title}</h4>
-          <div className="flex items-center gap-2">
+          <div className="space-y-2 pb-[30px] ">
+          <h4 className="text-xs font-bold">{title}</h4>
+          <div className="flex items-center gap-2 text-[#0E6CC2] text-[9px] font-semibold">
             <p>{companyName},</p>
-          <p>{startDate}</p>
-            <p className="h-[1px] w-3 bg-black"></p>
+          <p >{startDate}</p>
+            <p className="h-[1px] w-2  bg-[#0E6CC2]"></p>
             <p>{currentlyWorking ? 'Present' : endDate}</p>
           </div>
           <ul  className="list-disc pl-5">
-            <li>
-            <p>{workSummary}</p>
+            <li className="text-[7px] rounded-full">
+            <p className="text-[9px]">{workSummary}</p>
             </li>
           </ul>
         </div>

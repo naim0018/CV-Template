@@ -46,7 +46,7 @@ export const resumeData = {
         major: "Computer Science",
         currentlyStudying: false,
         description:
-          "Focused coursework on distributed systems, software architecture, and advanced algorithms. Thesis project involved building a high-performance machine learning model.",
+          "Focused coursework on distributed systems, software architecture, and advanced algorithms. Thesis project involved building a high-performance machine learning model.",  
       },
       {
         id: 2,
